@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+*{ 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family: 'Poppins', sans-serif; } 
+
+body{ 
+    background: rgb(230, 173, 173); 
+    display: flex;
+    justify-content:center; 
+    align-items: center; 
+    min-height:100vh; } 
+
+.container{ position: relative; 
+    width: 100%; 
+    max-width:1000px; 
+    min-height:1000px; 
+    margin:50px; 
+    background: #fff; 
+    display:grid; 
+    grid-template-columns: 1fr 2fr; 
+    box-shadow: 0 35 55 rgba(0,0,0,0.1); } 
+
+.container .left-side{ 
+    background: #800b0d; 
+    position: relative; 
+    padding:40px; } 
+
+    .profiletext{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .profiletext .imgbox{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .profiletext .imgbox .img{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .profiletext h2 span{
+        font-size :0.8em;
+        font-style: 300;
+    }
+
+    .profiletext h2 {
+        color:white;
+        font-size: 1.5em;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: center;
+
+    }
+    .Contactinfo{
+        padding-top: 40px;
+    }
+
+    .Contactinfo .title{
+        color:white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing:1px;
+        margin-bottom: 20px;
+    }
+    
+    .Contactinfo ul {
+        position:relative;
+    }
+    
+    .Contactinfo ul li{
+        position: relative;
+        list-style: none;
+        margin : 10px;
+        cursor:pointer
+    }
+
+    .Contactinfo ul li .icon{
+        display : inline-block;
+        width :30px;
+        font-size : 18px;
+        color: #e37b7d;
+    }
+
+    .Contactinfo ul li span{
+        color: #fff; 
+        font-weight : 300;
+    }
+
+    .Education .title{
+        color:white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing:1px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .Education ul {
+        list-style-type: none; /* Removes the bullets */
+        padding-left: 0; /* Removes default padding */
+    }
+    
+    .Education ul li {
+        color: white;
+        margin-bottom: 15px;
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    .Education h5 {
+        color: #e37b7d;
+        font-weight: 500;
+    }
+    
+    .Education h4 {
+        color: #fff;
+    }
+    
+    .languages .title {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    
+    .languages ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .languages ul li {
+        margin-bottom: 10px;
+    }
+    
+    .languages .text {
+        color: white;
+        font-weight: 300;
+        display: inline-block;
+        width: 100px; /* Adjust based on your design */
+    }
+    
+    .languages .percent {
+        display: inline-block;
+        width: 70%;
+        background: rgba(255, 255, 255, 0.2);
+        height: 6px;
+        border-radius: 3px;
+        vertical-align: middle;
+        margin-left: 10px;
+        position: relative;
+    }
+    
+    .languages .percent .progress {
+        height: 100%;
+        background: #e37b7d;
+        border-radius: 3px;
+    }
+    
+.container .right-side{ 
+    background: #fff; 
+    position: relative; 
+    padding:40px; }
+
+.right-side .profile .title{
+    color: #003147;
+}
+
+.experience .title {
+    padding-top: 40px;
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience ul li {
+    margin-bottom: 20px;
+}
+
+.experience ul li h5 {
+    color:#000000; /* Adjust this color as needed */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.experience ul li h4 {
+    color: rgb(110, 2, 2);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.experience ul li p {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.profile p{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top:15px;
+}
+
+.Skills {
+    padding-top: 40px;
+}
+
+.Skills .title {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.Skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Skills ul li {
+    margin-bottom: 10px;
+}
+
+.Skills .text {
+    color: #003147;
+    font-weight: 300;
+    display: inline-block;
+    width: 100px; /* Adjust based on your design */
+}
+
+.Skills .percent {
+    display: inline-block;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    height: 6px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+}
+
+.Skills .percent .progress {
+    height: 100%;
+    background: #e37b7d; /* Or another color if you prefer */
+    border-radius: 3px;
+}
+
+
